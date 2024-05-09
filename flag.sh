@@ -13,7 +13,15 @@ sys(){
   }
 
 
-while getopts 'abc' OPTION; do
+usage(){
+  echo -e "\nUsage: ${0} [-a] [-b] [-c]" >&2
+  echo -e '\n Zeigt den Status des Systems'
+  echo '-a Speicher mem'
+  echo '-b Speicher disk'
+  echo '-c Speicher sys'
+}
+
+while getopts 'abch' OPTION; do
   case "$OPTION" in
     a)
         mem
@@ -23,6 +31,9 @@ while getopts 'abc' OPTION; do
         ;;
     c)  
         sys
+        ;;
+    ?) 
+        usage
         ;;
   esac
 done
