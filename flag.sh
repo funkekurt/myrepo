@@ -21,7 +21,7 @@ usage(){
   echo '-c Speicher sys'
 }
 
-while getopts 'abch' OPTION; do
+while getopts 'abc' OPTION; do
   case "$OPTION" in
     a)
         mem
