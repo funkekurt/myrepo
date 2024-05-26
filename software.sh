@@ -1,6 +1,11 @@
 #!/bin/bash   
 
-# Aufruf:
+# Purpose: Getopts Examples working with arguments
+# Version: 1.00
+# Created Date: 
+# Sun May 26 21:14:08 UTC 2024
+# Modified Date
+Sun May 26 21:16:06 UTC 2024
 # ./software.sh a
 
 hallo()
